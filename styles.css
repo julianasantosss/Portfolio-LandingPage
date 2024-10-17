@@ -1,193 +1,117 @@
 body {
-    font-family: "Helvetica Neue", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
-/*--------------------------------------------------------------
-# Global Header
---------------------------------------------------------------*/
+
 .header {
-    --background-color: #000000;
-    --default-color: #ffffff;
-    --heading-color: #ffffff;
-    color: var(--default-color);
-    background-color: var(--background-color);
-    padding: 20px 0;
-    transition: all 0.5s;
-    z-index: 997;
-  }
-  
+  --background-color: #000000;
+  --default-color: #ffffff;
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 5px;
+}
+.profile-img {
+  width: 80px;
+  height: 80px;
+padding: 10px;
+}
+
+@media (min-width: 1200px) {
   .header .logo h1 {
     font-size: 30px;
-    margin: 0;
     font-weight: 600;
- 
   }
-  
- 
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-  /* Desktop Navigation */
-  @media (min-width: 1200px) {
-   
-    .navmenu ul {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      list-style: none;
-      align-items: center;
-    }
-  
-  
-  
-    .navmenu>ul>li {
-      white-space: nowrap;
-      padding: 15px 14px;
-    }
- 
-  
-    .navmenu a,
-    .navmenu a:focus {
-      white-space: nowrap;
-      transition: 0.3s;
-      position: relative;
-    }
-  
-   
-  
-    .navmenu>ul>li>a:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: -6px;
-      left: 0;
-      background-color: var(--nav-hover-color);
-      visibility: hidden;
-      width: 0px;
-      transition: all 0.3s ease-in-out 0s;
-    }
-  
-    .navmenu a:hover:before,
-    .navmenu li:hover>a:before,
-    .navmenu .active:before {
-      visibility: visible;
-      width: 100%;
-    }
-  
-    .navmenu li:hover>a,
-    .navmenu .active,
-    .navmenu .active:focus {
-      color: var(--nav-hover-color);
-    }
-  
-    .navmenu .dropdown ul {
-      margin: 0;
-      padding: 10px 0;
-      background: var(--nav-dropdown-background-color);
-      display: block;
-      position: absolute;
-      visibility: hidden;
-      left: 14px;
-      top: 130%;
-      opacity: 0;
-      transition: 0.3s;
-      border-radius: 4px;
-      z-index: 99;
-      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
-    }
-  
-    .navmenu .dropdown ul li {
-      min-width: 200px;
-    }
-  
-    .navmenu .dropdown ul a {
-      padding: 10px 20px;
-      font-size: 15px;
-      text-transform: none;
-      color: var(--nav-dropdown-color);
-    }
-  
-    .navmenu .dropdown ul a i {
-      font-size: 12px;
-    }
-  
-    .navmenu .dropdown ul a:hover,
-    .navmenu .dropdown ul .active:hover,
-    .navmenu .dropdown ul li:hover>a {
-      color: var(--nav-dropdown-hover-color);
-    }
-  
-    .navmenu .dropdown:hover>ul {
-      opacity: 1;
-      top: 100%;
-      visibility: visible;
-    }
-  
-    .navmenu .dropdown .dropdown ul {
-      top: 0;
-      left: -90%;
-      visibility: hidden;
-    }
-  
-    .navmenu .dropdown .dropdown:hover>ul {
-      opacity: 1;
-      top: 0;
-      left: -100%;
-      visibility: visible;
-    }
-  }
-  
-  /* Mobile Navigation */
-  @media (max-width: 1199px) {
-    .mobile-nav-toggle {
-      color: var(--nav-color);
-      font-size: 28px;
-      line-height: 0;
-      margin-right: 10px;
-      cursor: pointer;
-      transition: color 0.3s;
-    }
- 
-  
-    .navmenu ul {
-      display: none;
-      list-style: none;
-      position: absolute;
-      inset: 60px 20px 20px 20px;
-      padding: 10px 0;
-      margin: 0;
-      border-radius: 6px;
-      background-color: var(--nav-mobile-background-color);
-      border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-      box-shadow: none;
-      overflow-y: auto;
-      transition: 0.3s;
-      z-index: 9998;
-    }
- 
-  }
-/* Fonts */
-:root {
-    --default-font: "Helvetica Neue", sans-serif;
-  }
-  
 
-  
-  /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
-  :root {
-     --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  
+  .navmenu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
   }
- 
-  /* Smooth scroll */
-  :root {
-    scroll-behavior: smooth;
+  .navmenu > ul > li {
+    white-space: nowrap;
+    padding: 15px 14px;
   }
-  
- 
-  a {
-    color: var(--accent-color);
-    text-decoration: none;
+
+  .navmenu a,
+  .navmenu a:focus {
+    white-space: nowrap;
     transition: 0.3s;
+    position: relative;
   }
-  
+
+  .navmenu > ul > li > a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: var(--nav-hover-color);
+    visibility: hidden;
+    width: 0px;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .navmenu a:hover:before,
+  .navmenu li:hover > a:before,
+  .navmenu .active:before {
+    visibility: visible;
+    width: 100%;
+  }
+
+  .navmenu .dropdown ul {
+    margin: 0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-background-color);
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 14px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    color: var(--nav-color);
+    font-size: 28px;
+    line-height: 0;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+
+  .navmenu ul {
+    display: none;
+    list-style: none;
+    position: absolute;
+    inset: 60px 20px 20px 20px;
+    padding: 10px 0;
+    margin: 0;
+    border-radius: 6px;
+    background-color: var(--nav-mobile-background-color);
+    border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: none;
+    overflow-y: auto;
+    transition: 0.3s;
+    z-index: 9998;
+  }
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
