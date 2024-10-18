@@ -10,8 +10,8 @@ body {
   padding: 5px;
 }
 .profile-img {
-  width: 80px;
-  height: 80px;
+  width: 75px;
+  height: 75px;
 padding: 10px;
 }
 
@@ -115,3 +115,92 @@ a {
   text-decoration: none;
   transition: 0.3s;
 }
+
+
+
+/*--------------------------------------------------------------
+# background Section
+--------------------------------------------------------------*/
+.background {
+  width: 100%;
+  min-height: calc(100vh - 92px);
+  position: relative;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background img {
+  position: absolute;
+  inset: 0;
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+
+ 
+
+.background .container {
+  z-index: 3;
+}
+
+.background h2 {
+  margin: 0;
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+}
+
+.background p {
+  margin: 5px 0 0 0;
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+ 
+
+/* Ajustar la imagen más arriba en pantallas grandes */
+.profile-image {
+  width: 25vw !important; 
+  height: 25vw !important; 
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 20%; /* Ajusta la altura de la imagen */
+  margin-left: 60%;
+  margin-top: 10%;
+}
+
+/* Pantallas móviles */
+@media (max-width: 767px) {
+  .profile-image {
+    width: 40vw !important; /* Ajustar el tamaño de la imagen en móviles */
+    height: 40vw !important;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: auto; /* Quita el top para no forzar la posición */
+    margin-top: 28%;
+  }
+
+  .background .container {
+    flex-direction: column-reverse; /* Cambia el orden para poner el texto abajo */
+    align-items: center;
+    text-align: center;
+    margin-top: 50%;
+  }
+
+  .background h2, .background p {
+    font-size: 35px; /* Ajusta el tamaño del texto para móviles */
+    
+  }
+}
+ 
+ 
+ 
+ 
