@@ -1,6 +1,3 @@
-body {
-  font-family: "Helvetica Neue", sans-serif;
-}
 
 .header {
   --background-color: #000000;
@@ -200,7 +197,61 @@ a {
     
   }
 }
+
+
  
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ffcc00;  
+  border-radius: 50%;
+  position: absolute;
+ 
+}
+
+.education-title {
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 1; 
+  margin-left: 20px;
+}
+
+
+.progress-bar {
+  width: 0;
+  background-color: #d09ba4;
+  transition: width 2s ease;
+  height: 10px; 
+}
+
+.progress {
+  background-color: #e0e0e0; /* Color de fondo de la barra de progreso */
+  border-radius: 5px; /* Redondea las esquinas de la barra de progreso */
+  overflow: hidden; /* Asegura que la barra no sobresalga de su contenedor */
+  height: 10px; /* Ajusta la altura de la barra de progreso aquí */
+}
+
+h5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill p{
+  font-size: 15px;
+  margin-bottom: 7px;
+  font-weight: 500;
+}
+
+.percentage{
+  margin-top: 10px !important;
+  margin-right: 19px;
+  font-weight: 600;
+ 
+}
  
  
  
