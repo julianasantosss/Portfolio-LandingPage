@@ -223,10 +223,10 @@ a {
 }
 
 .progress {
-  background-color: #e0e0e0;  
-  border-radius: 5px; 
-  overflow: hidden; 
-  height: 10px;  
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 10px;
 }
 
 .skill {
@@ -246,32 +246,49 @@ a {
 }
 
 .image {
-  background-image: url("./img/tulips.png");  
+  background-image: url("./img/tulips.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  height: fit-content;
 }
 
 .image p {
   padding: 20px;
 }
 
+@media (max-width: 400px) {
+  .image {
+    background-image: url("./img/tulips.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: fit-content;
+    height: 600px;
+  }
+
+  .image p {
+    padding: 20px;
+  }
+
+  .skills {
+    margin: 0 0 0;
+  }
+}
 .custom-button {
-  background-color: #e1bfc5;  
-  color: white;  
-  border: none; 
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+  background-color: #e1bfc5;
+  color: white;
+  border: none;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
   margin-left: 15px;
   margin-bottom: 50px;
 }
 
 .custom-button:hover {
-  background-color:#d09ba4;  
+  background-color: #d09ba4;
 }
 
- 
 .linkedin-link {
-  color: #a36e77;  
+  color: #a36e77;
   text-decoration: underline;
 }
- 

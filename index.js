@@ -9,14 +9,25 @@ new Typed('.typed', {
   loop: true
 });
 
- // Skills loader function
-window.addEventListener('DOMContentLoaded', () => {
+
+// Skills loader
+document.addEventListener('DOMContentLoaded', () => {
   const progressBars = document.querySelectorAll('.progress-bar');
 
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const bar = entry.target;
+        const value = bar.getAttribute('data-skill');
+        bar.style.width = `${value}%`;
+      }
+    });
+  }, {
+    threshold: 0.5
+  });
+
   progressBars.forEach(bar => {
-    const value = bar.getAttribute('data-skill');
-    setTimeout(() => {
-      bar.style.width = `${value}%`;
-    }, 500); // Retardo de 0.5 segundos para empezar la animación
+    observer.observe(bar);
   });
 });
+
