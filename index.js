@@ -1,5 +1,5 @@
  
-
+// Type-Background function
 var typedItems = document.querySelector('.typed').getAttribute('data-typed-items').split(',');
 new Typed('.typed', {
   strings: typedItems,
@@ -9,8 +9,7 @@ new Typed('.typed', {
   loop: true
 });
 
- 
-
+ // Skills loader function
 window.addEventListener('DOMContentLoaded', () => {
   const progressBars = document.querySelectorAll('.progress-bar');
 

@@ -1,4 +1,3 @@
-
 .header {
   --background-color: #000000;
   --default-color: #ffffff;
@@ -6,11 +5,16 @@
   background-color: var(--background-color);
   padding: 5px;
 }
+
+/* Mini me */
+
 .profile-img {
   width: 75px;
   height: 75px;
-padding: 10px;
+  padding: 10px;
 }
+
+/* Navigation Navbar*/
 
 @media (min-width: 1200px) {
   .header .logo h1 {
@@ -74,7 +78,8 @@ padding: 10px;
   }
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation Navbar*/
+
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
     color: var(--nav-color);
@@ -102,9 +107,8 @@ padding: 10px;
   }
 }
 
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #ffffff;
 }
 
 a {
@@ -113,11 +117,8 @@ a {
   transition: 0.3s;
 }
 
+/* Background Section*/
 
-
-/*--------------------------------------------------------------
-# background Section
---------------------------------------------------------------*/
 .background {
   width: 100%;
   min-height: calc(100vh - 92px);
@@ -131,15 +132,10 @@ a {
 .background img {
   position: absolute;
   inset: 0;
- 
   width: 100%;
   height: 100%;
   object-fit: cover;
- 
 }
-
-
- 
 
 .background .container {
   z-index: 3;
@@ -158,100 +154,124 @@ a {
   font-weight: 600;
   color: white;
 }
- 
 
-/* Ajustar la imagen más arriba en pantallas grandes */
 .profile-image {
-  width: 25vw !important; 
-  height: 25vw !important; 
+  width: 25vw !important;
+  height: 25vw !important;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   position: absolute;
-  top: 20%; /* Ajusta la altura de la imagen */
+  top: 20%;
   margin-left: 60%;
   margin-top: 10%;
 }
 
-/* Pantallas móviles */
+/* background Section: Mobile */
+
 @media (max-width: 767px) {
   .profile-image {
-    width: 40vw !important; /* Ajustar el tamaño de la imagen en móviles */
+    width: 40vw !important;
     height: 40vw !important;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: auto; /* Quita el top para no forzar la posición */
+    top: auto;
     margin-top: 28%;
   }
 
   .background .container {
-    flex-direction: column-reverse; /* Cambia el orden para poner el texto abajo */
+    flex-direction: column-reverse;
     align-items: center;
     text-align: center;
     margin-top: 50%;
   }
 
-  .background h2, .background p {
-    font-size: 35px; /* Ajusta el tamaño del texto para móviles */
-    
+  .background h2,
+  .background p {
+    font-size: 35px;
   }
 }
 
+/* About me and Skills Section */
 
- 
+.aboutme {
+  border-radius: 9px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 .circle {
   width: 50px;
   height: 50px;
-  background-color: #ffcc00;  
+  background-color: #d09ba47d;
   border-radius: 50%;
   position: absolute;
- 
 }
 
 .education-title {
   font-size: 2rem;
   font-weight: bold;
-  z-index: 1; 
+  z-index: 1;
   margin-left: 20px;
 }
-
 
 .progress-bar {
   width: 0;
   background-color: #d09ba4;
   transition: width 2s ease;
-  height: 10px; 
+  height: 10px;
 }
 
 .progress {
-  background-color: #e0e0e0; /* Color de fondo de la barra de progreso */
-  border-radius: 5px; /* Redondea las esquinas de la barra de progreso */
-  overflow: hidden; /* Asegura que la barra no sobresalga de su contenedor */
-  height: 10px; /* Ajusta la altura de la barra de progreso aquí */
-}
-
-h5 {
-  display: flex;
-  justify-content: space-between;
+  background-color: #e0e0e0;  
+  border-radius: 5px; 
+  overflow: hidden; 
+  height: 10px;  
 }
 
 .skill {
   margin-bottom: 20px;
 }
 
-.skill p{
+.skill p {
   font-size: 15px;
   margin-bottom: 7px;
   font-weight: 500;
 }
 
-.percentage{
+.percentage {
   margin-top: 10px !important;
   margin-right: 19px;
   font-weight: 600;
- 
 }
+
+.image {
+  background-image: url("./img/tulips.png");  
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image p {
+  padding: 20px;
+}
+
+.custom-button {
+  background-color: #e1bfc5;  
+  color: white;  
+  border: none; 
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3); 
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+
+.custom-button:hover {
+  background-color:#d09ba4;  
+}
+
  
- 
+.linkedin-link {
+  color: #a36e77;  
+  text-decoration: underline;
+}
  
