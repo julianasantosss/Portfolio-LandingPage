@@ -35,7 +35,7 @@
   }
 
   .navmenu a,
-  .navmenu a:focus {
+  .navmenu{
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -292,3 +292,64 @@ a {
   color: #a36e77;
   text-decoration: underline;
 }
+
+
+/* Projects Section */
+
+.imagencard img{
+  
+  width: 100%;
+  object-fit: cover;
+}
+.projects-container{
+  background-color: #f9eeee;
+}
+
+.project-card {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* Technologies used Section */
+
+.tech-slider {
+  overflow: hidden;
+  width: 100%;
+  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+ 
+}
+
+.tech-container {
+  display: flex;
+  gap: 20px;
+  animation: scroll 15s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .tech-container {
+      width: 3rem;
+      animation: scroll 2s linear infinite;
+  }
+}
+
+.tech-tag {
+    background-color: #e8ced2;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+ 
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
