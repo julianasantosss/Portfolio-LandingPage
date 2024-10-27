@@ -9,4 +9,4 @@ Feel free to explore the projects and get in touch if you'd like to collaborate 
 - **LinkedIn**: [LinkedIn Profile](www.linkedin.com/in/mayra-santoss)
 - **GitHub**: [GitHub Profile](https://github.com/julianasantosss)
 
-Thank you for visiting my portfolio!
+Thank you for visiting my portfolio! bye!
