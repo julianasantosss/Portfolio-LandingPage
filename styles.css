@@ -215,6 +215,20 @@ a {
   margin-left: 20px;
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+}
+.underline {
+  width: 30px;
+  height: 4px;
+  background-color: #ad838a; /* Color morado */
+  margin: 0 auto;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+
 .progress-bar {
   width: 0;
   background-color: #d09ba4;
@@ -280,8 +294,6 @@ a {
   color: white;
   border: none;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
-  margin-left: 15px;
-  margin-bottom: 50px;
 }
 
 .custom-button:hover {
@@ -297,7 +309,6 @@ a {
 /* Projects Section */
 
 .imagencard img{
-  
   width: 100%;
   object-fit: cover;
 }
@@ -306,7 +317,6 @@ a {
 }
 
 .project-card {
-  padding: 2rem 0;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -352,4 +362,6 @@ a {
         transform: translateX(-100%);
     }
 }
-
+.projects-container .row {
+  margin: 0;
+}
