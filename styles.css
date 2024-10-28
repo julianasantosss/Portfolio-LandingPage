@@ -35,7 +35,7 @@
   }
 
   .navmenu a,
-  .navmenu{
+  .navmenu {
     white-space: nowrap;
     transition: 0.3s;
     position: relative;
@@ -47,15 +47,17 @@
     height: 2px;
     bottom: -6px; /* Ajusta esta propiedad según sea necesario */
     left: 0;
-    background-color: var(--nav-hover-color); /* Asegúrate de definir --nav-hover-color */
+    background-color: var(
+      --nav-hover-color
+    ); /* Asegúrate de definir --nav-hover-color */
     visibility: hidden;
     width: 0;
     transition: all 0.3s ease-in-out;
-}
-.navmenu a.active:before {
-  visibility: visible;
-  width: 100%;
-}
+  }
+  .navmenu a.active:before {
+    visibility: visible;
+    width: 100%;
+  }
 
   .navmenu .dropdown ul {
     margin: 0;
@@ -220,8 +222,6 @@ a {
   -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
   animation: heartbeat 1.5s ease-in-out infinite both;
 }
- 
-
 
 /* background Section: Mobile */
 
@@ -346,14 +346,13 @@ a {
   }
 }
 
-/* Buttom with animated arrow */ 
+/* Buttom with animated arrow */
 
 .custom-button {
   background-color: #e1bfc5;
   color: white;
   border: none;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
-  
 }
 .custom-button:hover {
   background-color: #d09ba4;
@@ -361,17 +360,16 @@ a {
 }
 
 .custom-button:hover .arrow {
-  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-/* Buttom projects Section */ 
+/* Buttom projects Section */
 
 .custom-button-projects {
   background-color: #e1bfc5;
   color: white;
   border: none;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
-  
 }
 .custom-button-projects:hover {
   background-color: #d09ba4;
@@ -379,10 +377,11 @@ a {
 }
 
 .custom-button-projects:hover .arrow {
-  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: slide-in-left 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@media (max-width: 320px) { /* Puedes ajustar este valor a tus necesidades */
+@media (max-width: 320px) {
+  /* Puedes ajustar este valor a tus necesidades */
   .custom-button-projects {
     background-color: #e1bfc5;
     color: white;
@@ -393,7 +392,6 @@ a {
     font-size: 15px;
   }
 }
-
 
 @keyframes slide-in-left {
   0% {
@@ -414,11 +412,11 @@ a {
 
 /* Projects Section */
 
-.imagencard img{
+.imagencard img {
   width: 100%;
   object-fit: cover;
 }
-.projects-container{
+.projects-container {
   background-color: #f9eeee;
 }
 
@@ -429,14 +427,18 @@ a {
   align-items: flex-start;
 }
 
-
 /* Technologies used Section */
 
 .tech-slider {
   overflow: hidden;
   width: 100%;
-  mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);
- 
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+  );
 }
 
 .tech-container {
@@ -447,45 +449,31 @@ a {
 
 @media (max-width: 768px) {
   .tech-container {
-      width: 3rem;
-      animation: scroll 2s linear infinite;
+    width: 3rem;
+    animation: scroll 2s linear infinite;
   }
 }
 
 .tech-tag {
-    background-color: #e8ced2;
-    font-weight: bold;
-    padding: 5px 15px;
-    border-radius: 20px;
- 
+  background-color: #e8ced2;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 20px;
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .projects-container .row {
   margin: 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* <!-- Contact Right-side form -->*/
- 
 
 .form-control {
   border: none;
@@ -493,21 +481,25 @@ a {
   padding-left: 0;
   padding-right: 0;
   border-radius: 0;
-  background: none; 
+  background: none;
 }
 
-.form-control:active, .form-control:focus {
+.form-control:active,
+.form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #000; }
+  border-color: #000;
+}
 
 .col-form-label {
   color: #000;
-  font-size: 13px; }
+  font-size: 13px;
+}
 
-.form-control, .custom-select {
+.form-control,
+.custom-select {
   height: 45px;
-  border-radius: 0; 
+  border-radius: 0;
 }
 
 label.error {
@@ -515,65 +507,61 @@ label.error {
   color: #8b2839;
 }
 
-
 /* <!-- Contact Left-side form -->*/
-.image-contact{
-    background-image: url('./img/contact.png'); /* Ruta a la imagen de fondo */
-    background-position: center;
-    background-size: cover;
-    border-radius: 9px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    min-height: 600px;
+.image-contact {
+  background-image: url("./img/contact.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 9px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-height: 600px;
 }
 .card-title {
-    margin-top: 20px;
-    height: 7%;
-    margin-left: 20px;
-    font-size: 25px;
+  margin-top: 20px;
+  height: 7%;
+  margin-left: 20px;
+  font-size: 25px;
 }
 
 .card-text {
-    font-size: 1em;
-    margin-bottom: 50px;
-    padding-bottom: 15px;
+  font-size: 1em;
+  margin-bottom: 50px;
+  padding-bottom: 15px;
 }
 
-.contact-info p{
-    margin-bottom: 30px;
-    font-size: 16px;
-    margin-right: 15px;
+.contact-info p {
+  margin-bottom: 30px;
+  font-size: 16px;
+  margin-right: 15px;
 }
 
-.contact-info i{
-    margin-left: 30px;
-   
+.contact-info i {
+  margin-left: 30px;
 }
 
 .contact-info p span {
-  word-break: break-all;     /* Rompe la palabra si es muy larga */
+  word-break: break-all;
 }
 
 .social-icons a {
-    display: inline-block;
-    min-height: 35px;
-    width: 35px;
-    background-color: rgb(255, 255, 255);
-    margin: 0 8px 15px 0;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    color: black;
-    margin-top: 40%;
-   
+  display: inline-block;
+  min-height: 35px;
+  width: 35px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 8px 15px 0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  color: black;
+  margin-top: 40%;
 }
 .social-icons {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .social-icons a:hover {
-    background-color: #ad838a;
+  background-color: #ad838a;
 }
-
 
 /* <!-- Footer Section -->*/
 
@@ -584,7 +572,8 @@ label.error {
 .footer h5 {
   font-weight: bold;
   margin-bottom: 10px;
-}.social-icons-footer {
+}
+.social-icons-footer {
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -616,7 +605,6 @@ label.error {
   margin-top: 20px;
 }
 
-
 .social-icon {
   width: 30px;
   height: 30px;
@@ -627,9 +615,8 @@ label.error {
   align-items: center;
   color: #e8ced2;
   margin: 0 10px;
- 
 }
 .social-icon:hover {
   background-color: #e8ced2;
-  color: #000; 
+  color: #000;
 }
