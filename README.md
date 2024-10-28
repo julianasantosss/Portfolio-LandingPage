@@ -6,7 +6,7 @@ Feel free to explore the projects and get in touch if you'd like to collaborate 
 
 ## Contact
 - **Email**: clmmayrasantos10a@gmail.com
-- **LinkedIn**: [LinkedIn Profile](www.linkedin.com/in/mayra-santoss)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/mayra-santoss)
 - **GitHub**: [GitHub Profile](https://github.com/julianasantosss)
 
 Thank you for visiting my portfolio! bye!
