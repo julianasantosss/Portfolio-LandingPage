@@ -364,6 +364,37 @@ a {
   animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
+/* Buttom projects Section */ 
+
+.custom-button-projects {
+  background-color: #e1bfc5;
+  color: white;
+  border: none;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+  
+}
+.custom-button-projects:hover {
+  background-color: #d09ba4;
+  color: white;
+}
+
+.custom-button-projects:hover .arrow {
+  animation: slide-in-left 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@media (max-width: 320px) { /* Puedes ajustar este valor a tus necesidades */
+  .custom-button-projects {
+    background-color: #e1bfc5;
+    color: white;
+    border: none;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100px; /* Ajusta el ancho para dispositivos móviles */
+    height: 40px; /* Ajusta la altura si es necesario */
+    font-size: 15px;
+  }
+}
+
+
 @keyframes slide-in-left {
   0% {
     transform: translateX(-10px);
@@ -510,11 +541,16 @@ label.error {
 .contact-info p{
     margin-bottom: 30px;
     font-size: 16px;
+    margin-right: 15px;
 }
 
 .contact-info i{
     margin-left: 30px;
-    margin-right: 10px;
+   
+}
+
+.contact-info p span {
+  word-break: break-all;     /* Rompe la palabra si es muy larga */
 }
 
 .social-icons a {
