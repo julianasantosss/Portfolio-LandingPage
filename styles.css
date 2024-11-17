@@ -171,7 +171,7 @@ a {
   cursor: pointer;
   background: white;
   border: none;
-  background: #e1bfc5;
+  background: #d0949e;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -349,13 +349,13 @@ a {
 /* Buttom with animated arrow */
 
 .custom-button {
-  background-color: #e1bfc5;
+  background-color: #d09ba4;
   color: white;
   border: none;
   box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
 }
 .custom-button:hover {
-  background-color: #d09ba4;
+  background-color: #b76e7a;
   color: white;
 }
 
@@ -459,6 +459,8 @@ a {
   font-weight: bold;
   padding: 5px 15px;
   border-radius: 20px;
+  white-space: nowrap;
+  display: inline-block;
 }
 
 @keyframes scroll {
